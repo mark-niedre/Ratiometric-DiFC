@@ -53,6 +53,7 @@ else
     % Pre-proc background subtracts data, calculates the noise/ moving peak
     % threshhold, and identifies peak candidates. Processes all data in the
     % data array
+    %Add name-value pairs (see proccodes info) for more processing parameters below we use 'ProminenceFactor'as 0.2 and RemoveBunchedPeaks as false
     [data_bs, noise, peaks, thresh_curve, in_dat] = preProc(data, time, params, 'RelativeThresh', rel_thresh, 'StdThresh', std_thresh,'ProminenceFactor',.2,'RemoveBunchedPeaks',false);
     % Save processed data, including parameters for processing
     disp('Saving processed data')
