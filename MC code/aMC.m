@@ -13,9 +13,9 @@ cfg.vol=uint8(ones(200,200,200));
 % define source/det positions
 detradius=2;
 cfg.issrcfrom0=1;
-cfg.srcpos=[100, 96, 0];
+cfg.srcpos=[100, 100, 0];
 cfg.srcdir=[0 0 1];
-cfg.detpos=[100, 104, 0 detradius];
+cfg.detpos=[100, 100, 0 detradius];
 cfg.debuglevel='P';
 
 % define GPU settings
@@ -25,7 +25,7 @@ cfg.autopilot=1;
 cfg.issaveref=1;
 
 % define optical properties, 
-cfg.prop=[0 0 1 1; .0025 10 0.9 1.365];
+cfg.prop=[0 0 1 1; .025 10 0.9 1.365];
 
 % other simulation settings
 cfg.tstart=0;
