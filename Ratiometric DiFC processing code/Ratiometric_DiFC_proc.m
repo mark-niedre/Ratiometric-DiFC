@@ -1,4 +1,6 @@
 %Code to process Ratiometric DiFC data
+%After hitting run select the folder with the data you want to process.
+%Make sure the name of the folder with the data is the same as the data files
 close all; clear; clc
 %make sure to add the location of the "proccodes" folder below.
 proccodes_lib = '';
