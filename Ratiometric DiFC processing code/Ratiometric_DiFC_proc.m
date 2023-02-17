@@ -102,6 +102,7 @@ fprintf('Average of peakwise amplitude ratio: %.3f\n', mean_pkwise_amp_ratio);
 
 fprintf('\n\n\n--------------------------------------------------------\n')
 try
+%Some useful results. Uncomment to compute
    %  fprintf('Detected %4.2g peaks per min in Fiber 1\n', pk_per_min_fiber_1);
 %     fprintf('Detected %4.2g peaks per min in Fiber 2\n', pk_per_min_fiber_2);
 %      fprintf('Removed a total of %g coincident peaks\n',coinc_pk_count);
