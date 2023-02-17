@@ -1,6 +1,6 @@
 %Code to process Ratiometric DiFC data
 close all; clear; clc
-%make sure to add the location of the "preProc" file below.
+%make sure to add the location of the "preProc" folder below.
 proccodes_lib = '';
 
 % Location of data
