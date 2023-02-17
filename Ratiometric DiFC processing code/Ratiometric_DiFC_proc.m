@@ -13,12 +13,13 @@ stem2 = '';
 % If the script cannot find a saved pre-processed file, it will pre-process
 % anyways
 proc_flag =  true;
-
 % multiplicative factor for excluding the current std:
 std_thresh = 1.04;          
 % multiplicative factor for the moving threshold:  peak threshold is
 % rel_thresh*estimated standard deviation:
 rel_thresh = [5,5]; 
+prom_fact = 1; %parameter to for identifying prominent peaks
+RBP = true; %Remove bunched peaks 
 
 % Parameters for peak matching routine
 coinc_window = 0.03;                              % length (in seconds) of window to search for coincident peaks
@@ -54,7 +55,7 @@ else
     % threshhold, and identifies peak candidates. Processes all data in the
     % data array
     %Add name-value pairs (see proccodes info) for more processing parameters below we use 'ProminenceFactor'as 0.2 and RemoveBunchedPeaks as false
-    [data_bs, noise, peaks, thresh_curve, in_dat] = preProc(data, time, params, 'RelativeThresh', rel_thresh, 'StdThresh', std_thresh,'ProminenceFactor',1,'RemoveBunchedPeaks',true);
+    [data_bs, noise, peaks, thresh_curve, in_dat] = preProc(data, time, params, 'RelativeThresh', rel_thresh, 'StdThresh', std_thresh,'ProminenceFactor',prom_fact,'RemoveBunchedPeaks',RBP);
     % Save processed data, including parameters for processing
     disp('Saving processed data')
     
