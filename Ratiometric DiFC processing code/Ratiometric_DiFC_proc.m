@@ -13,16 +13,14 @@ stem2 = '';
 % If the script cannot find a saved pre-processed file, it will pre-process
 % anyways
 proc_flag =  true;
-% multiplicative factor for excluding the current std:
-std_thresh = 1.04;          
-% multiplicative factor for the moving threshold:  peak threshold is
+%Below are some useful processing parameters. See proccode info file for details.
+% multiplicative factor for excluding the current std:      
+std_thresh = 1.04;    % multiplicative factor for the moving threshold:  peak threshold is
 % rel_thresh*estimated standard deviation:
 rel_thresh = [5,5]; 
-prom_fact = 1; %parameter to for identifying prominent peaks
-RBP = true; %Remove bunched peaks 
-
-% Parameters for peak matching routine
-coinc_window = 0.03;                              % length (in seconds) of window to search for coincident peaks
+prom_fact = 1; %parameter to describe peak prominence
+RBP = true; %function to remove bunched peaks 
+coinc_window = 0.03;    % length (in seconds) of window to search for coincident peaks
 
 %-----------------------------------------------------------------------------------------------------------------%
 
