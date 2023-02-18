@@ -12,7 +12,6 @@ stem2 = 'Trial1-C2';
 % If the script cannot find a saved pre-processed file, it will pre-process
 % anyways
 proc_flag =  true;        
-std_thresh = 1.04; % multiplicative factor for excluding the current std:
 rel_thresh = [5,5]; % multiplicative factor for the moving threshold:  peak threshold is rel_thresh*estimated standard deviation
 % Parameters for peak matching routine
 coinc_window = 0.03;                              % length (in seconds) of window to search for coincident peaks
@@ -48,7 +47,7 @@ else
     % Pre-proc background subtracts data, calculates the noise/ moving peak
     % threshhold, and identifies peak candidates. Processes all data in the
     % data array
-  [data_bs, noise, peaks, thresh_curve, in_dat] = preProc(data, time, params, 'RelativeThresh', rel_thresh, 'StdThresh', std_thresh,'ProminenceFactor',.2,'RemoveBunchedPeaks',false);
+  [data_bs, noise, peaks, thresh_curve, in_dat] = preProc(data, time, params, 'RelativeThresh', rel_thresh, 'ProminenceFactor',.2,'RemoveBunchedPeaks',false);
     
     % Save processed data, including parameters for processing
     disp('Saving processed data')
