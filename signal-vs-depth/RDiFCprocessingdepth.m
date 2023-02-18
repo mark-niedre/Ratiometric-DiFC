@@ -5,8 +5,8 @@ proccodes_lib = 'C:\Users\niedr\OneDrive - Northeastern University\Niedre_Lab\Fe
 % Location of data
 saveDir = '';
 %Name of data files
-stem1 = '_C1';
-stem2 = '_C2';
+stem1 = 'C1';
+stem2 = 'C2';
 
 % Set process flag - do we need data to be pre-processed?22
 % If the script cannot find a saved pre-processed file, it will pre-process
