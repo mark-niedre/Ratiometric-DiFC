@@ -1,6 +1,6 @@
 close all; clear; clc
 %location of processing folder
-proccodes_lib = 'C:\Users\niedr\OneDrive - Northeastern University\Niedre_Lab\Fernando';
+proccodes_lib = '';
 
 % Location of data
 saveDir = '';
