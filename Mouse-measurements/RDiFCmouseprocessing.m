@@ -3,10 +3,10 @@ close all; clear; clc
 proccodes_lib = '';
 
 % Location of data
-saveDir = 'C:\Users\niedr\OneDrive - Northeastern University\Niedre_Lab\Fernando\CURRENT EXPERIMENTS\Red-Green\microspheres\6-17-2022\FR5-and-Envy-Green-11';
+saveDir = '';
 %Name of data files
-stem1 = 'Trial1-C1';
-stem2 = 'Trial1-C2';
+stem1 = '';
+stem2 = '';
 
 % Set process flag - do we need data to be pre-processed?22
 % If the script cannot find a saved pre-processed file, it will pre-process
