@@ -12,11 +12,10 @@ stem2 = 'C2';
 % If the script cannot find a saved pre-processed file, it will pre-process
 % anyways
 proc_flag =  true;    
-%threshold lowered in the green channel, to include all coincident peaks
-rel_thresh = [5,1]; % multiplicative factor for the moving threshold:  peak threshold is rel_thresh*estimated standard deviation
-%adjust prom_fact to 3.8 for 0.75mm deep trial 3
+rel_thresh = [5,5]; % multiplicative factor for the moving threshold:  peak threshold is rel_thresh*estimated standard deviation
+
 prom_fact = 1; %%parameter to describe peak prominence
-%adjust std_thresh to 1.06 for 0.75mm deep trial 3 (noisy)
+
 std_thresh = 1.04; %std_thresh is a multiplicative factor for excluding the current std.
 % Parameters for peak matching routine
 coinc_window = 0.03;                              % length (in seconds) of window to search for coincident peaks
