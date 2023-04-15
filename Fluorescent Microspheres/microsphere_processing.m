@@ -57,9 +57,9 @@ end
 
 % Matches coincident peaks b/w two data sets
 % (ensure that data_bs is two columns long, and that peaks is two structs long)
-% disp('Matching coincident peaks')
-% [coinc_peaks(1), coinc_peaks(2),scores] = matchCoincPeaks(peaks(1), peaks(2), time);
-% plotPeaks(data_bs, time, coinc_peaks, thresh_curve, params, 'Direction', 'coinc')
+ disp('Matching coincident peaks')
+ [coinc_peaks(1), coinc_peaks(2),scores] = matchCoincPeaks(peaks(1), peaks(2), time);
+ plotPeaks(data_bs, time, coinc_peaks, thresh_curve, params, 'Direction', 'coinc')
 
 proc_dat.noise = noise;
 proc_dat.peaks = peaks;
