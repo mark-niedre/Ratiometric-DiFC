@@ -3,8 +3,8 @@ function [fitresult, gof] = createFit1(x, mc)
 %  Create a fit.
 %
 %  Data for 'Increase green absorption' fit:
-%      X Input : x
-%      Y Output: mc
+%      x  : Sodium concentration in log units
+%       mc : heoretical Ratiometric signal 
 %  Output:
 %      fitresult : a fit object representing the fit.
 %      gof : structure with goodness-of fit info.
