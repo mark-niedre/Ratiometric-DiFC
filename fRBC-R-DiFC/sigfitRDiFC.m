@@ -3,8 +3,8 @@ function [fitresult, gof] = createFit1(x, z)
 %  Create a fit.
 %
 %  Data for 'R-DiFC' fit:
-%      X Input : x
-%      Y Output: z
+%      X  : sodium concentration in log units
+%      Z  : Ratiometric signal 
 %  Output:
 %      fitresult : a fit object representing the fit.
 %      gof : structure with goodness-of fit info.
