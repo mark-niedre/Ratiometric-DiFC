@@ -99,45 +99,45 @@ try
 %      fprintf('Removed a total of %g coincident peaks\n',coinc_pk_count);
 %     fprintf('Peaks candidates found for channel 1: %g\n', peaks(1).count);
 %      fprintf('Peaks candidates found for channel 2: %g\n',peaks(2).count);
-%     fprintf('Calculated noise for channel 1: %.3f nA\n', noise(1));
-%     fprintf('Calculated noise for channel 2: %.3f nA\n', noise(2));
+%     fprintf('Calculated noise for channel 1: %.3f mV\n', noise(1));
+%     fprintf('Calculated noise for channel 2: %.3f mV\n', noise(2));
 %     fprintf('Estimated channel 1 SNR: %.3f dB\n', snr_fiber_1)
 %     fprintf('Estimated channel 2 SNR: %.3f dB\n', snr_fiber_2)
-%     fprintf('Average relative threshold for channel 1: %.3f nA\n', mean(thresh_curve(1)));
-%     fprintf('Average relative threshold for channel 2: %.3f nA\n', mean(thresh_curve(2)));
+%     fprintf('Average relative threshold for channel 1: %.3f mV\n', mean(thresh_curve(1)));
+%     fprintf('Average relative threshold for channel 2: %.3f mV\n', mean(thresh_curve(2)));
     fprintf('Average background level for channel 1: %.3f mV\n',mean_background(1));
   fprintf('Average background level for channel 2: %.3f mV\n',mean_background(2));
-      fprintf('Average peak amplitude for channel 1: %.3f nA\n', mean(peaks(1).pks));
-      fprintf('Average peak amplitude for channel 2: %.3f nA\n', mean(peaks(2).pks));
-       fprintf('Median peak amplitude for channel 1: %.3f nA\n', median(peaks(1).pks));
-      fprintf('Median peak amplitude for channel 2: %.3f nA\n', median(peaks(2).pks));
-%     fprintf('Peak amplitude standard deviation for channel 1: %.3f nA\n', std(peaks(1).pks));
-%     fprintf('Peak amplitude standard deviation for channel 2: %.3f nA\n', std(peaks(2).pks));
-  %   fprintf('Largest peak amplitude for channel 1: %.3f nA\n', max(peaks(1).pks));
-   %  fprintf('Smallest peak amplitude for channel 1: %.3f nA\n', min(peaks(1).pks));
-%     fprintf('Largest peak amplitude for channel 2: %.3f nA\n', max(peaks(2).pks));
-%     fprintf('Smallest peak amplitude for channel 2: %.3f nA\n', min(peaks(2).pks));
+      fprintf('Average peak amplitude for channel 1: %.3f mV\n', mean(peaks(1).pks));
+      fprintf('Average peak amplitude for channel 2: %.3f mV\n', mean(peaks(2).pks));
+       fprintf('Median peak amplitude for channel 1: %.3f mV\n', median(peaks(1).pks));
+      fprintf('Median peak amplitude for channel 2: %.3f mV\n', median(peaks(2).pks));
+%     fprintf('Peak amplitude standard deviation for channel 1: %.3f mV\n', std(peaks(1).pks));
+%     fprintf('Peak amplitude standard deviation for channel 2: %.3f mV\n', std(peaks(2).pks));
+  %   fprintf('Largest peak amplitude for channel 1: %.3f mV\n', max(peaks(1).pks));
+   %  fprintf('Smallest peak amplitude for channel 1: %.3f mV\n', min(peaks(1).pks));
+%     fprintf('Largest peak amplitude for channel 2: %.3f mV\n', max(peaks(2).pks));
+%     fprintf('Smallest peak amplitude for channel 2: %.3f mV\n', min(peaks(2).pks));
 catch
 %      fprintf('Peaks found for channel 1: %g\n', peaks(1).count);
 %      fprintf('Peaks found for channel 2: %g\n', peaks(2).count);
-%     fprintf('Calculated noise for channel 1: %.3f nA\n', noise(1));
-%     fprintf('Calculated noise for channel 2: %.3f nA\n', noise(2));
+%     fprintf('Calculated noise for channel 1: %.3f mV\n', noise(1));
+%     fprintf('Calculated noise for channel 2: %.3f mV\n', noise(2));
 %         fprintf('Estimated channel 1 SNR: %.3f dB\n', snr_fiber_1)
 %         fprintf('Estimated channel 2 SNR: %.3f dB\n', snr_fiber_2)
-%     fprintf('Average relative threshold for channel 1: %.3f nA\n', mean(thresh_curve(1)));
-%     fprintf('Average relative threshold for channel 2: %.3f nA\n', mean(thresh_curve(2)));
+%     fprintf('Average relative threshold for channel 1: %.3f mV\n', mean(thresh_curve(1)));
+%     fprintf('Average relative threshold for channel 2: %.3f mV\n', mean(thresh_curve(2)));
     fprintf('Average background level for channel 1: %.3f mV\n',mean_background(1));
   fprintf('Average background level for channel 2: %.3f mV\n',mean_background(2));
-      fprintf('Average peak amplitude for channel 1: %.3f nA\n', mean(peaks(1).pks));
-      fprintf('Average peak amplitude for channel 2: %.3f nA\n', mean(peaks(2).pks));
-       fprintf('Median peak amplitude for channel 1: %.3f nA\n', median(peaks(1).pks));
-      fprintf('Median peak amplitude for channel 2: %.3f nA\n', median(peaks(2).pks));
-%     fprintf('Peak amplitude standard deviation for channel 1: %.3f nA\n', std(peaks(1).pks));
-%     fprintf('Peak amplitude standard deviation for channel 2: %.3f nA\n', std(peaks(2).pks));
-%     fprintf('Largest peak amplitude for channel 1: %.3f nA\n', max(peaks(1).pks));
-%     fprintf('Smallest peak amplitude for channel 1: %.3f nA\n', min(peaks(1).pks));
-%     fprintf('Largest peak amplitude for channel 2: %.3f nA\n', max(peaks(2).pks));
-%     fprintf('Smallest peak amplitude for channel 2: %.3f nA\n', min(peaks(2).pks));
+      fprintf('Average peak amplitude for channel 1: %.3f mV\n', mean(peaks(1).pks));
+      fprintf('Average peak amplitude for channel 2: %.3f mV\n', mean(peaks(2).pks));
+       fprintf('Median peak amplitude for channel 1: %.3f mV\n', median(peaks(1).pks));
+      fprintf('Median peak amplitude for channel 2: %.3f mV\n', median(peaks(2).pks));
+%     fprintf('Peak amplitude standard deviation for channel 1: %.3f mV\n', std(peaks(1).pks));
+%     fprintf('Peak amplitude standard deviation for channel 2: %.3f mV\n', std(peaks(2).pks));
+%     fprintf('Largest peak amplitude for channel 1: %.3f mV\n', max(peaks(1).pks));
+%     fprintf('Smallest peak amplitude for channel 1: %.3f mV\n', min(peaks(1).pks));
+%     fprintf('Largest peak amplitude for channel 2: %.3f mV\n', max(peaks(2).pks));
+%     fprintf('Smallest peak amplitude for channel 2: %.3f mV\n', min(peaks(2).pks));
 end
 
 
